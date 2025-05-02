@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-yfinance>=0.2.36
+yfinance>=0.2.54
 pandas
 numpy
 tensorflow
