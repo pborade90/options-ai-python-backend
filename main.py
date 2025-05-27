@@ -175,7 +175,7 @@ def yearly_analysis(stock_symbol: str):
 # ✅ Allow CORS for Frontend Communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with frontend domain in production
+    allow_origins=["https://optionsai.netlify.app"],  # Replace with frontend domain in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
