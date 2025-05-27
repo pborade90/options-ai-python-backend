@@ -184,4 +184,7 @@ app.add_middleware(
 # ✅ Entry point for Render
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+    import os
+
+    port = int(os.environ.get("PORT", 8000))  # fallback for local dev
+    uvicorn.run(app, host="0.0.0.0", port=port)
